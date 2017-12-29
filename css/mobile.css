@@ -1,0 +1,409 @@
+@media (max-width: 768px) {
+  header {
+    background-color: #242424;
+    color: #fff;
+  }
+  .phone {
+    text-align: left;
+    color: #fff;
+  }
+  .phone a {
+    color: #fff;
+  }
+  .burger-button {
+    width: 3rem;
+    filter: brightness(0) invert(1);
+}
+.bron {
+    font-weight: 100;
+    font-size: 16px;
+    background-color: #ff5a5f;
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    padding-top:  2px;
+    margin: 20px auto;
+    display: block;
+    padding: 18px 0;
+    line-height: 0;
+}
+.bron img {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.feed-stars {vertical-align: middle;}
+.feed-stars img {
+    width: 15px;
+    height: 15px;
+}
+.mainquestinfo_adress {
+    font-size: 15px;
+    color: #888888;
+    border-bottom: 1px dashed #888888;
+}
+.feed-stars-white {
+    filter: brightness(0) invert(1);
+} 
+
+.feed-stars-grey {
+    filter: grayscale(1);
+    display: flex;
+    height: 10px;
+    padding: 0 0 0 2rem;
+}
+.feed-stars-grey img {
+    width: 10px;
+    height: 10px;
+}
+section.info.row {
+    max-width: 100%;
+}
+.text-usually {
+    font-weight: 100;
+    font-size: 18px;
+    vertical-align: middle;
+}
+  .mobrating-marker {
+    color: #fff;
+    min-height: 360px;
+    background-color: #242424;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+    line-height: 30px;
+    font-weight: 100;
+    font-family: "Roboto Slab", tahoma, serif;
+    margin-bottom: 30px;
+  }
+    .mobrating-marker .progress{
+        background-color: #444444;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+    .feed-stars-grey picture {
+        height: 10px!important;
+    }
+    .mobrating-marker .progress-bar{
+        background-color: #949494;
+    }
+  .mobrating-marker__stat span {
+    font-size: 36px;
+  }
+  .marker-stat__firstline {
+    color: #fff;
+    font-weight:  100;
+    font-size:  20px;
+    padding-bottom: 8px;
+  }
+  .mobrating-marker__grades {
+      font-size: 18px;
+      color: #ff711b;
+  }
+  .grey {
+    color: #939292;
+    padding-bottom:  10px;
+  }
+  .grey1 {
+    color: #939292;
+  }
+  .comment {
+    color: #2281d2;
+    width: 190px;
+    height: 40px;
+    display: inline;
+    background-color: #ebebeb;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+  }
+  .mobrating-marker__number{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 110px;
+    margin-bottom: 20px;
+}
+.mobrating-marker__number .numb{
+    font-size: 77px;
+    line-height: 66px;
+}
+.mobrating-marker__numbertext{
+    width: calc(100% - 115px);
+    display: inline-block;
+    vertical-align: top;
+    text-align:  left;
+}
+.stars {
+    margin-bottom: 35px;
+}
+  .white {
+      color: #fff;
+  }
+  .marker-stat__ico {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+  .marker__stat {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+    margin-bottom: 35px;
+    font-family: "Roboto Slab", tahoma, serif;
+    color: #a4a6a8;
+  }
+
+  .mainquestinfo {
+    padding: 0 2rem 20px;
+  }
+.mainquestinfo_tel {
+    background-color: #242424;
+    padding:  0;
+    height: 70px;
+    color: #ff711b;
+    text-align: center;
+    height: 71px;
+    font-size: 17px;
+  }
+  .mainquestinfo_pict {
+    margin: 0 -2rem;
+    height: 350px;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .tel {
+      font-size: 20px;
+      margin-bottom:  0;
+  }
+  .mainquestinfo_head {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .mobile-price_carusel_item p.sub-text {
+    padding-left: 0;
+  }
+  .ya-share2.ya-share2_inited {
+    padding: 0 2rem;
+  }
+  .ya-share2__container {
+    font-size: 12px;
+    border-bottom: 1px solid #c7c7c7;
+    border-top: 1px solid #c7c7c7;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .ya-share2__container .ya-share2__list {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    margin: 30px 0;
+  }
+
+  .ya-share2__container_size_m .ya-share2__item {
+    margin: 5px 20px 5px 0 !important;
+  }
+
+  .mobile-price_carusel {
+    white-space: nowrap;
+    width: 100%;
+    overflow: auto;
+  }
+  .mobile-price_carusel_item {
+    display: inline-block;
+    width: 280px;
+    vertical-align: top;
+    padding-bottom: 45px;
+  }
+  .mobile-banner_callback,
+  .mobile-banner_play {
+    width: 275px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .mobile-banner_callback {
+    background: url(../img/mobile/callback-blue.png) center center no-repeat;
+  }
+  .mobile-banner_play {
+    background: url(../img/mobile/callback-b.png) center center no-repeat;
+  }
+  .mobile-rule {
+    margin-bottom: 50px;
+  }
+  .mobile-quest-header {
+    display: flex;
+    align-items: center;
+    height: 85px;
+    padding: 0 0 0 2rem;
+    line-height: 0;
+  }
+
+  .mobile-quest-header img {
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+    margin-right: 0;
+  }
+  .mobile-rule img {
+    height: 60px;
+    width: 60px;
+  }
+  .mobile-timetable img {
+    height: 60px;
+    width: 78px;
+  }
+  .mobile-timetable span img {
+    width: 9px;
+    height: 14px;
+    vertical-align: inherit;
+  }
+  .red {
+    display: block;
+    color: #fc381e;
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  .red-color {
+    color: #fc381e;
+  }
+  .mobile-price img {
+    height: 85px;
+    width: 76px;
+  }
+  .mobile-quest-header h3 {
+    font-size: 22px;
+    display: inline-block;
+    margin: 0;
+    line-height: 24px;
+    padding-left: 15px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .mobile-quest .mobile-quest-slider .swiper-slide h6 {
+    margin-top: 1.4rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin-bottom: 0.2rem;
+    height: 4.2rem;
+    line-height: 2rem;
+  }
+  .mobile-rule h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px 0 15px 0;
+  }
+  .mobile-timetable h6 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 30px 0 15px 0;
+  }
+  .mobile-quest .mobile-quest-slider,
+  .mobile-rule-text,
+  .mobile-rule-text ul,
+  .mobile-timetable,
+  .mobile-price_carusel,
+  .sub-text,
+  .info {
+    padding: 0 0 0 2rem;
+  }
+  .sub-text {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .text-information {
+    margin: 25px 0 50px 0;
+  }
+  .mobile-price_carusel .red {
+    margin: 1px 0;
+    display: inline;
+    font-weight: 100;
+  }
+  .mobile-timetable .mobile-quest-header {
+    padding: 0;
+  }
+  .mobile-rule ul,
+  .mobile-rule p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .mobile-quest .mobile-quest-slider .swiper-slide a {
+    height: 185px;
+  }
+  .mobile-quest .mobile-quest-slider {
+    border-bottom: none;
+  }
+  .swiper-slide {
+    width: 205px !important;
+  }
+  .quest-more {
+    font-size: 1.3rem;
+    color: #000;
+    border-bottom: none;
+    position: absolute;
+    bottom: 1rem;
+    right: 2.2rem;
+  }
+  .quest-more:after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background: none;
+    background-size: auto;
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    -webkit-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+    transform: rotate(-45deg);
+    top: 0.74rem;
+    right: -1rem;
+  }
+  .mobile-quest-footer div:nth-of-type(1),
+  .mobile-quest-footer div:nth-of-type(3):not(.quest-more) {
+    margin-left: 1.4rem;
+    width: 10.3rem;
+  }
+  .mobile-quest .mobile-quest-slider {
+    border-bottom: none;
+    background-color: #fff;
+  }
+  .mobile-quest .mobile-quest-slider .swiper-slide {
+    margin: 0 0.5rem 6rem;
+  }
+  .callback {
+    width: 274px !important;
+    margin: 60px 0;
+  }
+  .callback a {
+      color: #fff;
+      font-size: 18px;
+    font-weight: 700;
+  }
+  .info .quest-amount,
+  .info .quest-blood,
+  .info .quest-actor,
+  .info .quest-time {
+    font-size: 16px;
+  }
+  .quest-actor img, .quest-amount img, .quest-blood img, .quest-time img {
+    height: 1.4rem;
+    left: auto;
+    min-width: auto;
+    vertical-align: top;
+    margin-right: .5rem;
+}
+.quest-actor:before, .quest-blood:before, .quest-time:before, .quest-amount:before {
+    display: none;
+}
+}
