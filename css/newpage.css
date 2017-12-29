@@ -7,7 +7,7 @@ body {
     font-size: 36px
 }
 
-.booking-row {
+.shedule .booking-row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -28,11 +28,11 @@ body {
 
 
 
-.booking-row.is-hidden {
+.shedule .booking-row.is-hidden {
     display: none
 }
 
-.booking-row.for-city-schedule {
+.shedule .booking-row.for-city-schedule {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -42,7 +42,7 @@ body {
     margin: 0px 20px
 }
 
-.booking-more{
+.shedule .booking-more{
     color:#ff6600;
     display: block;
     margin: auto;
@@ -51,7 +51,7 @@ body {
     padding-left: 127px;
 }
 
-.booking-more:after{
+.shedule .booking-more:after{
     content: '';
     width: 10px;
     height: 10px;
@@ -61,7 +61,7 @@ body {
     transform: rotate(-45deg) translate(8px, 4px);
 }
 
-.booking-row-day {
+.shedule .booking-row-day {
     display: inline-block;
     vertical-align: middle;
     padding: 24px 0px 24px 0px;
@@ -71,41 +71,41 @@ body {
 }
 
 
-.booking-row-day.for-city-schedule {
+.shedule .booking-row-day.for-city-schedule {
     width: 200px;
     padding: 0px
 }
 
-.booking-row-day.weekend {
+.shedule .booking-row-day.weekend {
     color:#ff5a5f;
 }
 
-.booking-row-day--date {
+.shedule .booking-row-day--date {
     text-align: left;
     font-size: 18px;
     font-weight: 300
 }
 
 
-.booking-row-day--date a {
+.shedule .booking-row-day--date a {
     color: black;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
     cursor: pointer
 }
 
-.booking-row-day--date a:hover {
+.shedule .booking-row-day--date a:hover {
     color: #E76304
 }
 
-.booking-row-day--name {
+.shedule .booking-row-day--name {
     text-align: left;
     font-weight: 300;
     font-size: 14px;
     text-transform: lowercase
 }
-
-.booking-row-time {
+#timetable .booking-row-time,
+.shedule .booking-row-time {
     border: none;
     background: none;
     display: inline-block;
@@ -126,27 +126,26 @@ body {
     flex-grow: 1
 }
 
-.booking-row-time:first-child {
+.shedule .booking-row-time:first-child {
     margin: 0 3px 0 0
 }
 
-.booking-row-time:last-child {
+.shedule .booking-row-time:last-child {
     margin: 0 0 0 3px
 }
 
-.booking-row-time.disabled {
+.shedule .booking-row-time.disabled {
     pointer-events: none;
     border-color: #dfdfdf;
     color: #b8b8b8
 }
 
-
-.booking-row-time:hover {
+.shedule .booking-row-time:hover {
     border-color: #E76304;
     color: #E76304
 }
 
-.booking-row-time-list {
+.shedule .booking-row-time-list {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -161,23 +160,23 @@ body {
     -ms-flex-positive: 1;
     flex-grow: 1
 }
-=
-.booking-row-time-list.for-city-schedule {
+
+.shedule .booking-row-time-list.for-city-schedule {
     margin: 0px
 }
 
-.booking-row-timeslots {
+.shedule .booking-row-timeslots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex
 }
 
-.booking-row-timeslots.for-city-schedule {
+.shedule .booking-row-timeslots.for-city-schedule {
     border-bottom: 1px solid #cccccc
 }
 
-.booking-row-time-special-price-value {
+.shedule .booking-row-time-special-price-value {
     position: absolute;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -188,12 +187,12 @@ body {
     padding: 0 10px;
     background-color: #fff;
 }
-.booking-row-time-special-price-value .skidka{
+.shedule .booking-row-time-special-price-value .skidka{
     position: absolute;
     top: 100%;
 }
 
-.booking-row-time-special-price-value .skidka:before{
+.shedule .booking-row-time-special-price-value .skidka:before{
     content:'';
     position: absolute;
     width: 100%;
@@ -202,14 +201,14 @@ body {
     background: #6a6a6a;
 }
 
-.booking-row-time-special-price-value.for-city-schedule {
+.shedule .booking-row-time-special-price-value.for-city-schedule {
     position: static;
     -webkit-transform: none;
     transform: none;
     text-align: center
 }
 
-.booking-row-time-special-price,.booking-row-time-special-price_city-schedule {
+.shedule .booking-row-time-special-price,.shedule .booking-row-time-special-price_city-schedule {
     display: inline-block;
     position: relative;
     margin: 0 5px;
@@ -223,7 +222,7 @@ body {
     max-height: max-content
 }
 
-.booking-row-time-special-price::before {
+.shedule .booking-row-time-special-price::before {
     display: inline-block;
     content: "";
     width: 100%;
@@ -235,7 +234,7 @@ body {
 }
 
 @media (max-width: 1023px) {
-    .booking-row-time {
+   #timetable .booking-row-time {
         min-width: 75px;
         height: 45px;
         font-size: 18px;
@@ -244,35 +243,20 @@ body {
         border-radius: 5px;
         padding: 5px;
     }
-}
-@media (max-width: 1023px) {
     .booking-row-time.disabled {
         border:none
     }
-}
-
-@media (max-width: 1023px) {
     .booking-row-time-list {
         display:block;
         float: none;
         width: 100%;
     }
-}
-
-
-@media (max-width: 1023px) {
     .booking-row-timeslots {
         display:block
     }
-}
-
-@media (max-width: 1023px) {
     .booking-row-time-special-price-value {
         display:none
     }
-}
-
-@media (max-width: 1023px) {
     .booking-row-time-special-price-value.for-city-schedule {
         display:block;
         position: static;
@@ -280,78 +264,33 @@ body {
         transform: none;
         text-align: center
     }
-}
-
-@media (max-width: 1023px) {
     .booking-row-time-special-price,.booking-row-time-special-price_city-schedule {
         display:block
     }
-}
-
-
-@media (max-width: 1023px) {
     .booking-row {
         display:block
     }
-}
-
-@media (max-width: 1023px) {
     .booking-row.for-city-schedule {
         display:block;
         height: auto;
         padding-bottom: 20px
     }
-}
-
-@media (max-width: 1023px) {
     .booking-header {
         text-align:left
     }
-}
-/* .booking-row-day {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 24px 0px 24px 0px;
-    line-height: 22px;
-    margin: 0 10px 0 0;
-    width: 110px
-} */
-/* 
-@media (max-width: 1023px) {
-    .booking-row-day {
-        display:block;
-        width: 100%;
-        padding: 0 0 15px 0;
-        border-bottom:none
-    }
-} */
-
-
-@media (max-width: 1023px) {
     .booking-row-day.for-city-schedule {
         width:100%;
         margin-bottom: 10px
     }
-}
-
-
-@media (max-width: 1023px) {
     .booking-row-day.weekend {
         border-right:none;
         border-bottom: 1px solid #FC381E;
         color: #FC381E
     }
-}
-
-@media (max-width: 1023px) {
     .booking-row-day--date {
         display:inline-block;
         font-size: 20px
     }
-}
-
-
-@media (max-width: 1023px) {
     .booking-row-day--name {
         display:inline-block;
         font-size: 20px
@@ -442,7 +381,18 @@ h3 {
 }
 
 /*New New New*/
-
+.footer{
+    padding: 5rem 4rem;
+}
+.menu-top {
+    background-color: #333;
+}
+.super-sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+  }
+  
 .subheader--sticky{
     position: -webkit-sticky;
     position: sticky;
@@ -732,20 +682,6 @@ h3 {
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
-}
-
-.quest-chars{
-    position: static;
-    margin: 20px;
-}
-.quest-chars span:nth-child(1), .quest-chars span:nth-child(3),
-.quest-actor, .quest-amount, .quest-blood, .quest-time{
-    margin: 0;
-    line-height: 2.9rem;
-}
-
-.quest-chars span:nth-child(1), .quest-chars span:nth-child(3){
-    width:50%;
 }
 
 .tab-content{
