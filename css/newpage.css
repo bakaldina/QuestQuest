@@ -698,7 +698,10 @@ h3 {
     color: #939292;
 }
 
-
+.quest-chars{
+    width: 100%;
+    margin: 0 20px;
+}
 
 .bron.comment {
 margin: auto;
