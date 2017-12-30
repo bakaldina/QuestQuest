@@ -111,7 +111,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    padding: 8px 0 12px 0;
+    padding: 8px 0 20px 0;
     width: 42px;
     margin: 0 3px;
     cursor: pointer;
@@ -124,6 +124,13 @@ body {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1
+}
+
+.shedule .booking-row-time:hover span{
+    font-size: 18px;
+    margin: 8px 8px!important;
+    box-shadow: 0 0px 32px 7px #f1f1f1;
+    padding: 8px;
 }
 
 .shedule .booking-row-time:first-child {
@@ -312,8 +319,9 @@ body {
     border: none;
     border-bottom: 2px solid #ff6600;
 }
-.tabs .nav-tabs>li>a:hover {
-    border-color: #fff;
+
+.tabs .nav-tabs>li>a {
+    border:none;
 }
 .tabs .nav>li>a:focus, .nav>li>a:hover {
     background-color: #fff;
@@ -340,13 +348,55 @@ h3 {
 .price .red {
     color: #FC381E;
 }
-.price a {
+/* .price a {
     font-size: 16px;
     display: block;
     text-decoration: underline;
     margin: 0 0 10px;
+} */
+.price_item {
+    margin-top: 50px;
+    position: relative;
+}
+.price_item h3 {
+    margin-top: 0;
+}
+.price_item .red {
+    margin-bottom: 20px;
+}
+.price-button {
+    text-align: center;
+}
+.price-button a {
+    color: #fff;
+    font-size: 16px;
+}
+#Price {
+    padding-bottom: 150px;
+}
+.price_img {
+    position: absolute;
+    bottom: -160px;
+    right: -100px;
+    width: 600px;
+    height: 380px;
+}
+.tab-price_table {
+    margin-bottom: 30px;
+}
+.tab-price_table td {
+    padding-bottom: 10px;
 }
 
+table.tab-price_table td a {
+    text-decoration: underline;
+}
+table.tab-price_table th {
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
 .qi-review{
     padding: 20px 0;
     border-bottom: 1px solid #dadada;
@@ -563,8 +613,6 @@ h3 {
     border: 0;
     font-weight: 400;
     padding: 0;
-    height: 4.3rem;
-    line-height: 4.3rem;
     -webkit-transition: all .2s;
     -o-transition: all .2s;
     transition: all .2s;
@@ -578,13 +626,14 @@ h3 {
     text-align: center;
     width: auto;
     padding: 0 20px;
-    margin: 0 0 0 16px;
-    font-size: 12px;
+    margin: 0 16px 0 0;
+    font-size: 16px;
+    line-height: 50px;
 }
 
 .bron--ico:before,
 .friendgift--ico:before{
-    background-position: 5px 50%;
+    background-position: 5px 5px;
     background-repeat: no-repeat;
     content: '';
     width: 30px;
@@ -665,6 +714,7 @@ h3 {
     margin-right: 10px;
 }
 .marker__stat{
+    white-space: nowrap;
     font-size: 20px;
     line-height: 30px;
     font-weight: 100;
@@ -700,7 +750,8 @@ h3 {
 
 .quest-chars{
     width: 100%;
-    margin: 0 20px;
+    margin: 0 20px 20px;
+    position: static
 }
 
 .bron.comment {
@@ -708,6 +759,7 @@ margin: auto;
 color: #2281d2;
 width: 190px;
 height: 40px;
+line-height: 40px;
 background-color: #ebebeb;
 border-radius: 30px;
 font-size: 15px;
@@ -742,4 +794,24 @@ padding: 0;
 
 .tab-notice{
 
+}
+.tab-price_table{
+    width: 100%;
+}
+.quest-info {
+    margin-bottom: 20px;
+}
+.quest-ico {
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.quest-ico_phone {
+    background-image: url("../img/newpage/phone.png");
+}
+.quest-ico_local {
+    background-image: url("../img/newpage/place.png");
 }
