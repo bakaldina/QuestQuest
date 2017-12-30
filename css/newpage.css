@@ -50,7 +50,7 @@ body {
     cursor: pointer;
     padding-left: 127px;
 }
-
+.RatingMore-label:after,
 .shedule .booking-more:after{
     content: '';
     width: 10px;
@@ -584,11 +584,25 @@ table.tab-price_table th {
 .rating-marker .progress-bar{
     background-color: #949494;
 }
-
+.tab-rating_content .comment {
+    position: relative;
+    left: -26px;
+}
 .quest-info__ext{
     display: inline-block;
     vertical-align: middle;
     font-size: 18px;
+}
+.rating-marker_top {
+    padding: 10px 20px 10px 115px;
+    color: #a48d69;
+    font-size: 15px;
+    background-image: url(../img/newpage/top5.png);
+    background-repeat: no-repeat;
+    line-height: 1.2;
+    background-position: 40px 50%;
+    border: 1px solid #555555;
+    border-radius: 13px;
 }
 
 .quest-info__ext .price{
@@ -715,7 +729,7 @@ table.tab-price_table th {
 }
 .marker__stat{
     white-space: nowrap;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: 100;
     margin-bottom: 15px;
@@ -778,7 +792,7 @@ padding: 0;
 }
 .marker-ico--type1{
 
-    background-image: url(../img/newpage/top5.png)
+    background-image: url(../img/newpage/top5-s.png)
 }
 .marker-ico--type2{
 
@@ -814,4 +828,118 @@ padding: 0;
 }
 .quest-ico_local {
     background-image: url("../img/newpage/place.png");
+}
+.revworld__head{
+    margin-bottom: 25px;
+}
+.revworld__item{
+    margin-bottom: 45px;
+}
+.revworld__item__bubble.revbubble {
+    background-color: #dedede;
+    border-radius: 10px;
+    padding: 40px 20px;
+    position: relative;
+    color: #000;
+    margin-bottom: 20px;
+}
+.revworld__item__bubble.revbubble:after {
+    content: '';
+    border: 10px solid transparent;
+    border-top: 10px solid #dedede;
+    position: absolute;
+    top: 100%;
+}
+.revadvisor_item{
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+    border-bottom: 1px solid #4c4c4c;
+}
+.revadvisor__head {
+    margin-bottom: 20px;
+}
+.revadvisor_item__date {
+    font-size: 12px;
+    font-weight: 100;
+    color: #ababab;
+}
+.revadvisor_item__head {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+.revadvisor_item__text {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.revadvisor_item__author{
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 24px;
+    color:#ababab;
+}
+.revadvisor-ico{
+    height: 19px;
+    width:19px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/newpage/circle-green.png);
+    margin-right:10px;
+}
+
+.revadvisor-ico--twostars{
+    width:38px;
+}
+.revadvisor-ico--threestars{
+    width:57px;
+}
+.revadvisor-ico--fourstars{
+    width:76px;
+}
+.revadvisor-ico--fivestars{
+    width:95px;
+}
+.revadvisor_item__text a {
+    color: #0093dd;
+    font-size: 15px;
+}
+
+#Rating{
+    position: relative;
+
+}
+
+.RatingMore-label{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 0;
+    bottom: 0;
+    left:0;
+    color: #ff711b;
+
+    background: #2d2d2d;
+}
+
+.RatingMore-label:before{
+    content:""; 
+    position: absolute;
+    bottom:100%;
+    left: 0;
+    height: 40px;
+    width: 100%;
+
+    background: linear-gradient(to top, rgb(46, 46, 46) 0%,  rgba(46, 46, 46, 0.5) 80%, rgba(46, 46, 46, 0.0) 100%);
+}
+
+#RatingMore:checked + .tab-rating_content{
+    height: auto;
+}
+
+.tab-rating_content{
+    height: 692px;
+    overflow: hidden;
 }
