@@ -529,13 +529,7 @@ table.tab-price_table th {
     font-family: "Roboto Slab",tahoma,serif;
 }
 
-.quest-info__text {
-    font-size: 19px;
-    line-height: 24px;
-    color:#333;
-    font-weight: 100;
 
-}
 .quest-info__buttons{
     margin: 10px 0;
 }
@@ -938,8 +932,27 @@ padding: 0;
 #RatingMore:checked + .tab-rating_content{
     height: auto;
 }
-
+#TextMore:checked + .quest-info__text{
+    height: auto;
+}
+.TextMore-label {
+color: #ff6600;
+}
+.TextMore-label:before{
+content:'Читать далее...'
+}
+#TextMore:checked ~ .TextMore-label:before{
+    content:'Свернуть'
+}
 .tab-rating_content{
     height: 692px;
     overflow: hidden;
+}
+.quest-info__text {
+    height: 118px;
+    overflow: hidden;
+    font-size: 19px;
+    line-height: 24px;
+    color:#333;
+    font-weight: 100;
 }
