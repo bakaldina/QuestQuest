@@ -26,8 +26,6 @@ body {
     justify-content: space-between
 }
 
-
-
 .shedule .booking-row.is-hidden {
     display: none
 }
@@ -176,7 +174,7 @@ body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
 }
 
 .shedule .booking-row-timeslots.for-city-schedule {
@@ -261,8 +259,9 @@ body {
     .booking-row-timeslots {
         display:block
     }
-    .booking-row-time-special-price-value {
-        display:none
+    .shedule .booking-row-time-special-price-value {
+     position: static; 
+     transform: translate(0,0); 
     }
     .booking-row-time-special-price-value.for-city-schedule {
         display:block;
@@ -303,7 +302,64 @@ body {
         font-size: 20px
     }
 }
+@media (max-width: 768px) {
+    .shedule .booking-row,
+    .shedule .booking-row-timeslots{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .shedule .booking-row-day{
+        flex:1;
+    }
+    .shedule .booking-row-time-list{
 
+    flex-direction: column;
+    margin-top: 15px;
+    }
+    .shedule .booking-row-time {
+        min-width: 75px;
+        height: 45px;
+        font-size: 18px;
+        margin: 8px 8px!important;
+        box-shadow: 0 0px 32px 7px #f1f1f1;
+        border-radius: 5px;
+        padding: 5px;
+        flex:0;
+    }
+    .shedule .booking-header{
+        padding: 40px 20px 40px 100px;
+        background-image: url(../img/mobile/timetable.png);
+        background-repeat: no-repeat;
+        background-position: 3px center;
+        font-size: 22px;
+    }
+    .shedule .booking-row-day--date,
+    .shedule .booking-row-day--name {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .shedule .booking-row-day {
+        padding: 0 14px;
+    }
+    .shedule .booking-row-time-special-price-value {
+        font-size: 18px;
+        color: #ff6600;
+        font-weight: 400;
+        padding: 0 10px;
+    }
+    .shedule .booking-row-time-special-price::before {
+        display: none;
+    }
+    .booking-row-day.weekend {
+        border-bottom: none;
+    }
+    .shedule .booking-more {
+        padding-left: 0;
+    }
+    .shedule .skidka {
+        display: none;
+    }
+}
 /* .booking-row-time-special-price::before {
     display: inline-block;
     content: "";
