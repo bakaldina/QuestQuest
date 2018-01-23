@@ -184,6 +184,7 @@ body {
 .shedule .booking-row-time-special-price-value {
     position: absolute;
     left: 50%;
+    top: 100%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     font-size: 12px;
