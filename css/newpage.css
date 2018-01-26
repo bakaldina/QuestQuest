@@ -196,6 +196,7 @@ body {
 .shedule .booking-row-time-special-price-value .skidka{
     position: absolute;
     top: 100%;
+    left: 10px;
 }
 
 .shedule .booking-row-time-special-price-value .skidka:before{
